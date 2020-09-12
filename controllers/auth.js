@@ -29,7 +29,7 @@ exports.register = (req, res) => {
       }
     }
 
-    let hashedID = await bcrypt.hash(id, 8);
+    let hashedID = await bcrypt.hash(email, 8);
     let hashedPassword = await bcrypt.hash(password, 8);
 
     console.log(hashedPassword);
