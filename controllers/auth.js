@@ -44,10 +44,9 @@ exports.register = (req, res) => {
 
         console.log("req.session.opp defined as:")
         console.log(req.session.opp)
-        res.redirect('/inhome');
-        //return res.render('register',{
-        //  message: 'User registered'
-        //})
+        return res.render('register',{
+          message: 'User registered'
+        })
       }
 
     })
