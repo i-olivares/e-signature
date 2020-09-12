@@ -1,0 +1,587 @@
+.parent
+{
+	width:100%;
+	min-width: 1366px;
+}
+.top{
+	box-shadow: 0px 10px 14px -7px #9E9D9B;
+	background-color: #343c44;
+	/*background-image: url("https://i.ibb.co/WchPRV1/Sin-t-tulo.png");*/
+  background-size:cover;
+	float:center;
+	position:relative;
+	height: 60px;
+	width:100%;
+	box-sizing:border-box;
+	border: 1px solid #343c44;
+
+}
+
+.left
+{
+	box-shadow: 10px 0px 14px -7px #9E9D9B;
+	float:left;
+	width:30%;
+	box-sizing:border-box;
+	padding:5px;
+	border-right: solid 2px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	min-height:100%;
+}
+
+.right
+{
+	background-color: #F5F4F2;
+	float:right;
+	width:70%;
+	box-sizing:border-box;
+	padding:5px;
+	border: solid 1px rgba(255,255,255,0);
+	min-height:100%;
+}
+
+nav {
+  background-color: #343c44;
+  color: #fff;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: green;
+  text-decoration: none;
+}
+h4 {
+  letter-spacing: 1px;
+  font-family: verdana;
+}
+
+
+.header-container {
+  position: relative;
+  text-align: center;
+  color: #343c44;
+}
+
+.header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+.info {
+		margin-left: 10%;
+		margin-right: 10%;
+    margin-top: 20px;
+		margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-position: 12px;
+    background-repeat: no-repeat;
+    padding: 5%;
+		width:80%;
+    color: #383e45;
+    background-color: #D1F2EB;
+		font-family: helvetica;
+		font-size: 18px;
+
+    /*border: solid #004083;
+    border-width: 1px 1px 3px;*/
+}
+
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+#signature-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
+}
+
+#show-pdf-button {
+	width: 150px;
+	display: block;
+	margin: 20px auto;
+}
+
+
+
+.container {
+	align-content: center;
+	width: 700px;
+	margin: 0px auto;
+
+}
+
+
+
+
+.loader {
+	margin-left: 50%;
+	margin-top: 10%;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #999999;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.loaderText {
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	color: #999999;
+	font-size: 10px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.canvas {
+	border: 1px solid rgba(255,255,255,0.2);
+	box-sizing: border-box;
+}
+
+
+h1 {
+  font-family: helvetica;
+  font-size: 40px;
+	vertical-align:middle;
+  text-align: center;
+  margin: 10px;
+	color: rgb(255,255,255);
+  font-weight:bold;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  font-weight:bold;
+}
+
+
+
+ps {
+  font-family: helvetica;
+  font-size: 18px;
+  text-align: left;
+  margin: 0px;
+  font-weight:bold;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-loader {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	text-align: center;
+}
+
+
+.modal-button {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.myButton {
+	/*
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	text-shadow:0px 0px 0px #3d768a;
+	border:0.10em solid #FFFFFF;
+	*/
+	background-color:#343c44;
+	border-radius:8px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 80px;
+	text-decoration:none;
+	box-shadow: 10px 10px 14px -7px black;
+}
+
+.myButton2 {
+	/*
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	text-shadow:0px 0px 0px #3d768a;
+	border:0.10em solid #FFFFFF;
+	*/
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+	background-color:#343c44;
+	border-radius:8px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:8px 8px;
+	text-decoration:none;
+	text-align: center;
+	box-shadow: 10px 10px 14px -7px black;
+}
+
+
+
+.myButton:hover {
+	/*background:linear-gradient(to bottom, #5ee281 5%, #256c38 100%);
+	background-color:#256c38;*/
+	color:#BBBBBB;
+	border-color:#BBBBBB;
+}
+.myButton:active {
+	/*position:relative;
+	top:1px;
+	*/
+	color:#BBBBBB;
+	border-color:#BBBBBB;
+}
+
+
+.pdfImage {
+	/*
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	text-shadow:0px 0px 0px #3d768a;
+	*/
+
+	float:right;
+	background-color:#343c44;
+	border-radius:25px;
+	border:0em solid #FFFFFF;
+	margin:0 0 0 0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-loader {
+	display: table-cell;
+	text-align: center;
+  background-color: #fefefe;
+  margin: 15%; /* 15% from the top and centered */
+	margin-top: 50%;
+  padding: 40px 40px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-button {
+  /*background-color: #5ee281;
+	border: 2px solid #CCCCCC;*/
+	margin-top: 50%;
+	text-align: center;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+	border-radius: 15px;
+  width: 470px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #778899;
+  float: right;
+	margin-left: auto;
+  font-size: 28px;
+  font-weight: bold;
+	-webkit-appearance: none;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#signature-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
+}
+
+
+.textCanvas{
+    display: none;
+		border: 1px black solid;
+}
+
+
+.button{
+        margin-top: 3%;
+        background: white;
+        border: 1px solid #CCCCCC;
+				border-radius: 15px;
+        display: inline-block;
+				text-align: center;
+				font-size: 16px;
+
+}
+
+
+.button:focus {
+  border: 2px solid #363f45;
+}
+
+
+.primary{
+				margin-top: 5%;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-bottom: 5%;
+        background: #363f45;
+        border: 1px solid #CCCCCC;
+				border-radius: 10px;
+				height:40px;
+        display: inline-block;
+				text-align: center;
+				font-size: 16px;
+				color: white;
+
+}
+
+.primary:hover{
+        background: #748794;
+
+}
+
+.pdf-buttons{
+	margin-left: 50%;
+}
+.centered-buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clearButton{
+				margin-top: 5%;
+				margin-bottom: 5%;
+        background: white;
+        border: 1px solid #CCCCCC;
+				border-radius: 10px;
+        display: inline-block;
+				height:40px;
+				text-align: center;
+				font-size: 16px;
+				color: black;
+
+}
+
+
+
+
+.previous,
+.next{
+				margin-top: 5%;
+				margin-bottom: 5%;
+        background: #F5F4F2;
+        border: 1px solid black;
+				border-radius: 5px;
+        display: inline-block;
+				height:30px;
+				text-align: center;
+				font-size: 14px;
+				color: black;
+
+}
+
+.previous:active,
+.next:active{
+				margin-top: 5%;
+				margin-bottom: 5%;
+        background: #CCCCCC;
+        border: 1px solid black;
+				border-radius: 5px;
+        display: inline-block;
+				height:30px;
+				text-align: center;
+				font-size: 14px;
+				color: black;
+
+}
+
+
+.download-button {
+		background: #ffffff;
+		border: solid 1px #e6e6e6;
+		border-radius: 2px;
+		height: 100px;
+		line-height: 100px;
+		margin: 0 0 20px 30%;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		width: 100px;
+}
+
+.download-button span {
+		background: #f2594b;
+		border-radius: 4px;
+		color: #ffffff;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: normal;
+		padding: 5px 10px;
+		position: relative;
+		text-transform: uppercase;
+		z-index: 1;
+}
+
+.download-button span:last-child {
+		margin-left: -20px;
+}
+
+.download-button:before,
+.download-button:after {
+		background: #ffffff;
+		border: solid 3px #9fb4cc;
+		border-radius: 4px;
+		content: '';
+		display: block;
+		height: 35px;
+		left: 50%;
+		margin: -17px 0 0 -12px;
+		position: absolute;
+		top: 50%;
+		/*transform:translate(-50%,-50%);*/
+
+		width: 25px;
+}
+
+.download-button:hover:before,
+.download-button:hover:after {
+		background: #e2e8f0;
+}
+/*a:before{transform:translate(-30%,-60%);}*/
+
+.download-button:before {
+		margin: -23px 0 0 -5px;
+}
+
+.download-button:hover {
+		background: #e2e8f0;
+		border-color: #9fb4cc;
+}
+
+.download-button:active {
+		background: #dae0e8;
+		box-shadow: inset 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+.download-button span:first-child {
+		display: none;
+}
+
+.download-button:hover span:first-child {
+		display: inline-block;
+}
+
+.download-button:hover span:last-child {
+		display: none;
+}
+
+
+.floating {
+		border-radius: 10px;
+    text-align: center;
+    background-position: 12px;
+    background-repeat: no-repeat;
+    padding: 5%;
+		width:400px;
+    color: #383e45;
+    background-color: white;
+		font-family: helvetica;
+		font-size: 12px;
+
+    /*border: solid #004083;
+    border-width: 1px 1px 3px;*/
+}

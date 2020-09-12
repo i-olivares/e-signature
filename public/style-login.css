@@ -1,0 +1,117 @@
+nav {
+  background-color: #343c44;
+  color: #fff;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav-bottom {
+  background-color: #343c44;
+  color: #fff;
+  padding: 10px 60px 60px 60px;
+  display: flex;
+}
+
+nav-bottom h4 {
+    margin: 10px 70px 10px 0px;
+}
+nav-bottom p {
+    margin: 0px 70px 5px 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: green;
+  text-decoration: none;
+}
+h4 {
+  letter-spacing: 1px;
+  font-family: verdana;
+}
+
+.parent
+{
+	width:100%;
+  min-width: 1366px
+}
+.middle{
+	background-image: url("https://static.wixstatic.com/media/a99eaa_ff9bbb7fe6d7486186f39bc3757f9e2d~mv2.png");
+  background-size: 100%;
+	float:center;
+	position:relative;
+	height: 500px;
+	width:100%;
+	box-sizing:border-box;
+	padding:0px;
+	border: 0px solid #343c44;
+}
+
+.right{
+	background-color: #fff;
+  opacity: 0.5;
+  background-size: 100%;
+	float:right;
+	position:relative;
+	height: 500px;
+	width:50%;
+	box-sizing:border-box;
+	padding:0px;
+	border: 0px solid #343c44;
+}
+
+
+.left{
+  background-size: 100%;
+	float:left;
+	position:relative;
+	height: 500px;
+	width:50%;
+	box-sizing:border-box;
+	padding:0px;
+	border: 0px solid #343c44;
+}
+
+.button {
+	background-color:#fff;
+	border-radius:8px;
+	cursor:pointer;
+	color:#343c44;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 50px 0px 50px;
+	text-decoration:none;
+}
+
+
+
+/*
+div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}*/
+
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "biosign",
+  "version": "2.0.0",
+  "description": "pdf signing with p12 certificate generation",
+  "main": "pdf-audit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app-login.js"
+  },
+  "keywords": [
+    "pdf",
+    "sign",
+    "electronic-signature",
+    "node-signpdf"
+  ],
+  "author": "i.olivares",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {}
+}
