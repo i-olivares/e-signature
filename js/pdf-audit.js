@@ -257,9 +257,9 @@ function getUploadedInfo(){
   return text
 }
 
-//function ID(){
-//  return Math.random().toString(16).slice(2).toUpperCase();
-//}
+function ID(){
+  return Math.random().toString(16).slice(2).toUpperCase();
+}
 
 
 function getGeolocationInfo(){
