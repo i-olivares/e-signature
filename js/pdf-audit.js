@@ -242,8 +242,7 @@ function getSignatureInfo(){
   let name = _USERNAME
   let geolocationInfo = getGeolocationInfo()
   let email = _EMAIL
-  _USERID = ID()
-  let text = "Signed by " + name + "\nIP: "  + geolocationInfo.ip + "\n" + email+ "\nUser ID: " + _USERID;
+  let text = "Signed by " + name + "\nIP: "  + geolocationInfo.ip + "\n" + email+ "\nUser ID: " + _HASHEDID;
   //+ "\nSignature: ";
   return text
 }
@@ -253,15 +252,14 @@ function getUploadedInfo(){
   let geolocationInfo = getGeolocationInfo()
   let email = _EMAIL
 
-  _USERID = ID()
-  let text = "Uploaded by " + name + "\nIP: "  + geolocationInfo.ip + "\n" + email+ "\nUser ID: " + _USERID;
+  let text = "Uploaded by " + name + "\nIP: "  + geolocationInfo.ip + "\n" + email+ "\nUser ID: " + _HASHEDID;
   //+ "\nSignature: ";
   return text
 }
 
-function ID(){
-  return Math.random().toString(16).slice(2).toUpperCase();
-}
+//function ID(){
+//  return Math.random().toString(16).slice(2).toUpperCase();
+//}
 
 
 function getGeolocationInfo(){

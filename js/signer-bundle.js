@@ -46345,7 +46345,7 @@ window.signPDF = async function(pdfArrayBuffer,pdfInfoBytes,certArrayBuffer,imag
                       transformOptions: { rotate: 0, space: titleRefWidth/width, tilt: 0, xPos: 5, yPos: yPosTitle },
                     },
                     {
-                      value:  _USERID,
+                      value:  _HASHEDID,
                       fontSize: dateFont,
                       transformOptions: { rotate: 0, space: dateRefWidth/width, tilt: 0, xPos: 25, yPos: yPosDate },
                     },

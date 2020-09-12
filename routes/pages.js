@@ -32,7 +32,7 @@ router.get('/inhome', (req,res) =>{
 router.get('/sign', (req,res) =>{
   let user = req.session.user;
   if(user) {
-    res.render('sign', {email:user[0].email, name: user[0].name });
+    res.render('sign', {hashedID:user[0].hashedID,email:user[0].email, name: user[0].name });
     return;
   }
   res.redirect('/');
