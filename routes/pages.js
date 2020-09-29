@@ -39,7 +39,7 @@ router.get('/sign', (req,res) =>{
 });
 
 
-router.get('/loggout', (req,res) =>{
+router.get('/logout', (req,res) =>{
   if (req.session.user){
     req.session.destroy(() =>{
       res.redirect('/')

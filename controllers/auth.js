@@ -44,8 +44,8 @@ exports.register = (req, res) => {
 
         console.log("req.session.opp defined as:")
         console.log(req.session.opp)
-        return res.render('register',{
-          message: 'User registered'
+        return res.render('inhome',{
+          //message: 'User registered'
         })
       }
 
@@ -60,6 +60,7 @@ exports.register = (req, res) => {
 
 exports.login = async (req, res) => {
 
+
   try{
 
     const { email, password} = req.body;
@@ -68,10 +69,18 @@ exports.login = async (req, res) => {
         message: 'Please provide an email and password'
       })
     }
-
+    console.log("IM at LOGIN before the query, this is the body:")
+    console.log('email:',email)
+    console.log('password:',password)
     db.query('SELECT * FROM users WHERE email = ?', [email], async (error,results) => {
+      console.log("Im inside the query, results are:")
       console.log(results)
-      if(!results || !(await bcrypt.compare(password, results[0].password))) {
+      console.log('results.length:',results.length)
+      if(results.length == 0){
+        return res.status(401).render('login',{
+          message: 'Email or password is incorrect'
+        })
+      }else if (!(await bcrypt.compare(password, results[0].password))) {
         return res.status(401).render('login',{
           message: 'Email or password is incorrect'
         })
