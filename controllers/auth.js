@@ -44,8 +44,8 @@ exports.register = (req, res) => {
 
         console.log("req.session.opp defined as:")
         console.log(req.session.opp)
-        return res.render('inhome',{
-          //message: 'User registered'
+        return res.render('login',{
+          message: 'User registered, please Sign in'
         })
       }
 
